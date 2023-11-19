@@ -6,6 +6,12 @@ test:
 	python -m pytest -vv --cov=hello --cov=greeting tests
 	python -m pytest --nbval notebook.ipynb
 
+debug:
+	python -m pytest -vv --pdb
+
+debugthree:
+	python -m pytest -vv --pdb --maxfail=3
+
 format:
 	black *.py
 
